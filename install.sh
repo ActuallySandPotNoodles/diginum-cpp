@@ -10,10 +10,10 @@ mkdir -p /usr/share/sandpotnoodles
 wget https://raw.githubusercontent.com/ActuallySandPotNoodles/diginum-cpp/refs/heads/main/diginum.png -O /usr/share/sandpotnoodles/diginum.png
 wget https://raw.githubusercontent.com/ActuallySandPotNoodles/diginum-cpp/refs/heads/main/diginum.desktop -O /usr/share/applications/diginum.desktop
 if [[ "$(uname -m)" == "x86_64" ]]; then
-wget https://github.com/ActuallySandPotNoodles/diginum-cpp/releases/download/v1.0.0/diginum_x86_64 -O /usr/bin/sanddice
+wget https://github.com/ActuallySandPotNoodles/diginum-cpp/releases/download/v1.0.0/diginum_x86_64 -O /usr/bin/diginum
 fi
 if [[ "$(uname -m)" == "aarch64" ]]; then
-wget https://github.com/ActuallySandPotNoodles/diginum-cpp/releases/download/v1.0.0/diginum_aarch64 -O /usr/bin/sanddice
+wget https://github.com/ActuallySandPotNoodles/diginum-cpp/releases/download/v1.0.0/diginum_aarch64 -O /usr/bin/diginum
 fi
-chmod 775 /usr/bin/sanddice
+chmod 775 /usr/bin/diginum
 echo "Install Complete!"
