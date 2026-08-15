@@ -58,14 +58,14 @@ public:
             current_int++;
             update(current_int);
         }
-        catch (exception &e) {cout << "Fail!";}
+        catch (exception &e) {cout << "Fail!" << endl;}
     }
     void digitdown() {
         try {
             current_int--;
             update(current_int);
         }
-        catch (exception &e) {cout << "Fail!";}
+        catch (exception &e) {cout << "Fail!" << endl;}
     }
     void kb_add(int what) {
         string what_str = to_string(what);
