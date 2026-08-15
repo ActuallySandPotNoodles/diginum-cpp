@@ -14,4 +14,8 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 add_executable(diginum_cpp main.cpp window.h)
 
+set_target_properties(diginum_cpp PROPERTIES
+    POSITION_INDEPENDENT_CODE ON
+)
+
 target_link_libraries(diginum_cpp PRIVATE Qt::Widgets)
