@@ -75,7 +75,7 @@ public:
             current_int = stoi(what_str);
             update(current_int);
         }
-        catch (exception &e) {cout << "Fail!";}
+        catch (exception &e) {cout << "Fail!" << endl;}
     }
     void key_back() {
         try {
